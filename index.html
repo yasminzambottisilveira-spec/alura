@@ -29,7 +29,7 @@
             }
             
             img{
-                with: 80px;
+                width: 80px;
                 height: 80px;
             }
             .artigo-autor {
@@ -83,8 +83,8 @@
              
          </main>
      </body>
-     <scriipt>
-        const botoes = document.querySelectorALL("button");
+     <script>
+        const botoes = document.querySelectorAll("button");
         
         botoes.forEach(function (botao) {
         let curtiu = false;
@@ -92,7 +92,7 @@
         function botaoClicado() {
                 console.log("fui clicado");
                 let texto = botao.querySelector("span");
-                if(curtiu --- false){
+                if(curtiu === false){
                    texto.textContent++;
                    curtiu = true;
                 } else{
@@ -101,5 +101,5 @@
         }
     })
         
-    </scriipt>
+  </script>
    </html>
