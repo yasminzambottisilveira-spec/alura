@@ -14,7 +14,7 @@
                 text-align: center;
                 max-width: 800px;
                 margin: 0 auto;
-                padding: 16 px
+                padding: 16px
             }
              main{  
               background-color:#FFFFFF;
@@ -23,6 +23,8 @@
               margin: 0 auto;
               padding: 16px;
               display: flex;
+              flex-direction:column;
+              gap: 20px;
             }
             article{
                 display: flex;
@@ -44,8 +46,7 @@
         </header>
         <main>
             </article>
-                 <img src="anacastelablog.png"
-                 alt="image da ana casela no cavalo"
+                 <img src="anacastelablog.png"  alt="image da ana casela no cavalo"
             </div>
                  <h2>Meu primeiro post</h2>
                  <p class="artigo-autor">Por: Yasmin Zambotti</p> 
@@ -56,10 +57,9 @@
                  <button>​👍​ <span>0</span>​</button>
              </div>
          </article>
-         </article>
-            
-         <img src="anacastelablog.png"
-              alt="image da ana casela no cavalo"
+    <main>
+       </article> 
+         <img src="anacastelablog.png"  alt="image da ana casela no cavalo"
             </div>
                  <h2>Meu segundo post</h2>
                  <p class="artigo-autor">Por: Yasmin Zambotti</p> 
@@ -69,8 +69,10 @@
                  <button>💕 <span>0</span>​</button>
                  <button>​👍​ <span>0</span>​</button>
              </div>
-            <img src="anacastelablog.png"
-                alt="image da ana casela no cavalo"
+      </article>
+    <main> 
+        </article>
+            <img src="anacastelablog.png"  alt="image da ana casela no cavalo"
             </div>
                  <h2>Meu terceiro post</h2>
                  <p class="artigo-autor">Por: Yasmin Zambotti</p> 
@@ -80,14 +82,15 @@
                  <button>💕 <span>0</span>​</button>
                  <button>​👍​ <span>0</span>​</button>
              </div>
-             
-         </main>
+       </article>
+    </main>
      </body>
      <script>
         const botoes = document.querySelectorAll("button");
         
         botoes.forEach(function (botao) {
         let curtiu = false;
+            
         botao.addEventListener("click",  botaoClicado);
         function botaoClicado() {
                 console.log("fui clicado");
