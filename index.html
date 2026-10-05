@@ -13,6 +13,7 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 16px;
+    border:5px solid:#C85A32
    }
   
         main{  
@@ -20,24 +21,26 @@
               color:#CD5C5C;
               text-align:center;
               max-width:800px;
-             margin:0 auto;
-         paddin
-            }
-            article{
-                display: flex;
+              margin:0 auto;
+              padding: 16px;
             }
             
             img{
-                width: 80px;
-                height: 80px;
+                width: 200px;
+                height: 200px;
             }
             .artigo-autor {
                 font-weight: bold;
             } 
-        </style>
-    </head>
-    <body>
-        <header>
+  article{
+     display: flex;
+    align-items: center;
+}
+    </style>
+</head>
+   
+<body>
+    <header>
             <h1>ANA CASTELÂNDIA 💓​🐎​</h1>
             <p1>Aqui vou compartilhar fatos e curiosidades sobre a cantora Ana Castela!!! A boiadeira chegou!</p1>
         </header>
@@ -50,12 +53,14 @@
                  <p>Boas-vindas ao meu novo blog! Aqui vou
                  compartilhar assuntos noticias e novidaes
                  sobre o mundo do agro e principalmente a ana castela.</p> 
+              </div>
+         </article>
+              <div class="botoes-container">
                  <button>💕 <span>0</span>​</button>
                  <button>​👍​ <span>0</span>​</button>
              </div>
          </article>
 
-     
          <img src="anacastelablog.png"  alt="image da ana casela no cavalo">
             </div>
                  <h2>Meu segundo post</h2>
@@ -63,35 +68,25 @@
                  <p>Começouda carreira! antes da cantora Ana Castela estourar 
                      com o hit "boiadeira" em 2021, ela chegou a cursar faculdade 
                      de medicina, mas abandonou os estudos para focar na música após o sucesso.</p> 
+          </div>
+         </article>
                  <button>💕 <span>0</span>​</button>
                  <button>​👍​ <span>0</span>​</button>
              </div>
-      </article>
-        </main> 
-        </article>
-            <img src="anacastelablog.png"  alt="image da ana casela no cavalo"
-            
-                 <h2>Meu terceiro post</h2>
-                 <p class="artigo-autor">Por: Yasmin Zambotti</p> 
-                 <p>Boas-vindas ao meu novo blog! Aqui vou
-                 compartilhar assuntos noticias e novidaes
-                 sobre o mundo do agro e principalmente a ana castela.</p> 
-                 <button>💕 <span>0</span>​</button>
-                 <button>​👍​ <span>0</span>​</button>
-             </div>
-    
-    </main>
-     </body>
-     <script>
+        </main>
+
+
+
+ <script>
         const botoes = document.querySelectorAll("button");
-          
-        botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click",  function () {
-            let spanTexto = botao.querySelector("span");
-            let valorAtual = parseInt(spanTexto.textContnt);
-            spanTexo.textContent = valorAtual +1;
-        });
-     });
+
+     botoes.forEach(function (botao) {
+        botao.addEventListener("click", function () {
+          let spanTexto = botao.querySelector("span");
+          let valorAtual = parseInt(spanTexto.textContent);
+             spanTexto.textContent = valorAtual + 1;
+          });
+      });
   </script>
-   </html>
+</body>
+</html>
